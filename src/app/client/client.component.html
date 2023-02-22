@@ -1,0 +1,21 @@
+<body>
+    <h4>Enter Client Information Below</h4>
+    <div id="inputArea">
+        <form name="clientinfo" (ngSubmit)="addtoClientDB" method="post" #myForm="ngForm">
+            Name:
+            <input class="Inputinfo" type="text" name="txtFullName" placeholder="John Stewart" [(ngModel)]="clientForm.name" required>
+            <br>
+            Email:
+            <input class="Inputinfo" type="text" name="txtEmail" placeholder="john@example.com" [(ngModel)]="clientForm.email" required>
+            <br>
+            Phone:
+            <input class="Inputinfo" type="tel" name="phone" placeholder="XXX-XXX-XXXX" pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}" [(ngModel)]="clientForm.phone" required>
+            <br>
+            Address:
+            <input class="Inputinfo" type="text" name="propAddress" placeholder="312 Elm Street,OR 32401" [(ngModel)]="clientForm.address" required>
+            <br>
+            <br>
+            <input type="submit" value = "Enter" id ="enterbutton">
+        </form>
+    </div>
+</body>

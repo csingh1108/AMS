@@ -1,0 +1,32 @@
+
+  <body>
+        <h4>Enter meeting information below</h4>
+        <form name ="form1" method="post" [formGroup]="clientmeetingForm" (ngSubmit)="addtoClientMeetingsDB()">
+          <label for="name">Name:</label>
+          <input class="Inputinfo" type="text" name="txtFullName" placeholder="John Stewart's Meeting" formControlName="meetingname" required>
+          <br>
+          <label for="meeting" >Select a date:</label>
+          <input class ="Inputinfo" type="date" name="meetingDate" required pattern="\d{2}-\d{2}-\d{4}" formControlName="date" required>
+          <br>
+          <label for="time">Select a time:</label>
+          <select class = "Inputinfo" id="time" name ="time" formControlName="time" required>
+            <option *ngFor="let time of times">
+                {{time.title}}
+            </option>
+          </select>
+          <br>
+          <label for="type">Type:</label>
+          <select class="Inputinfo" name="type" formControlName="type">
+            <option *ngFor="let type of types">
+                {{type.title}}
+            </option>
+
+          </select>
+          <br>
+          Additional Information:
+          <br>
+          <textarea class="Inputinfo" id="txtDescription" name="description" rows="8" cols="50" placeholder="Please enter any additional information here."></textarea>
+          <br>
+          <input id="submitbutton" type="submit">
+        </form>
+    </body>

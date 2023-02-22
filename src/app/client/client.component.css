@@ -1,0 +1,37 @@
+#header {
+    text-align:center;
+    font-size:x-large;
+    color: #293d37;
+}
+body {
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    width:auto;
+    margin: 0px;
+    background: linear-gradient(180deg, skyblue, rgb(150, 205, 230));
+}
+#inputArea{
+    line-height: 1.8;
+}
+#enterbutton{
+    width:60px;
+    height:30px;
+}
+
+.Inputinfo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    width: auto;
+    display: inline;
+    border:1px solid #7a7373;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin:8px;
+}
+
+h4{
+    padding-top: 15px;
+}
+
+

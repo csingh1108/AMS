@@ -1,0 +1,12 @@
+#Author: text@example.com
+#Date: 19th Feburary 2023
+#Description: This feature is used to validate client info
+#Keywords: name, email
+Feature: Check client name, email for correct formats
+
+  Scenario: Check client name
+    Given: A user enters client information on account creation page
+    When: The user is finished entering a valid name, email
+    And: Clicks the submit button
+    Then: They should be given confirmation an account was created
+
